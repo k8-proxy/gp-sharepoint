@@ -1,0 +1,54 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+
+[req_distinguished_name]
+countryName = GB
+countryName_default = GB
+stateOrProvinceName = London
+stateOrProvinceName_default = London
+localityName = 
+localityName_default = 
+organizationName = Glasswall Solutions Ltd.
+organizationName_default = Glasswall Solutions Ltd.
+organizationalUnitName = Glasswall Solutions Ltd.
+organizationalUnitName_default = Glasswall Solutions Ltd.
+commonName = glasswall-icap.com
+commonName_default = glasswall-icap.com
+commonName_max = 64
+
+[CA]
+copy_extensions = copy
+
+[ v3_req ]
+# Extensions to add to a certificate request
+keyUsage = critical, digitalSignature, keyAgreement, keyCertSign, cRLSign, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1  = saaspoc1.sharepoint.com
+DNS.2  = glasswallk8.sharepoint.com 
+DNS.3  = login.microsoftonline.com
+DNS.4  = aadcdn.msauth.net
+DNS.5  = login.windows.net
+DNS.6  = aadcdn.msftauth.net
+DNS.7  = mysignins.microsoft.com
+DNS.8  = account.activedirectory.windowsazure.com
+DNS.9  = shell.cdn.office.net
+DNS.10 = spoprod-a.akamaihd.net
+DNS.11 = browser.pipe.aria.microsoft.com
+DNS.12 = amcdn.msftauth.net
+DNS.13 = login.microsoftonline.com
+DNS.14 = r4.res.office365.com
+DNS.15 = substrate.office.com
+DNS.16 = lpcres.delve.office.com
+DNS.17 = webshell.suite.office.com
+DNS.18 = loki.delve.office.com
+DNS.19 = aadcdn.msftauth.net
+DNS.20 = aadcdn.msauth.net
+DNS.21 = mysignins.microsoft.com
+DNS.22 = account.activedirectory.windowsazure.com
+DNS.23 = static2.sharepointonline.com
+DNS.24 = glasswallk8-my.sharepoint.com
+DNS.25 = ukc-word-edit.officeapps.live.com
