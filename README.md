@@ -91,7 +91,7 @@ Use [this configuration file](https://github.com/k8-proxy/k8-reverse-proxy/blob/
 - Add hosts records to your client system hosts file ( i.e **Windows**: C:\Windows\System32\drivers\etc\hosts , **Linux, macOS and  Unix-like:** /etc/hosts ) as follows
   
   ```
-  127.0.0.1 saaspoc1.sharepoint.com login.microsoftonline.com aadcdn.msauth.net login.windows.net aadcdn.msftauth.net mysignins.microsoft.com account.activedirectory.windowsazure.com shell.cdn.office.net spoprod-a.akamaihd.net browser.pipe.aria.microsoft.com amcdn.msftauth.net login.microsoftonline.com r4.res.office365.com substrate.office.com lpcres.delve.office.com webshell.suite.office.com loki.delve.office.com aadcdn.msftauth.net aadcdn.msauth.net mysignins.microsoft.com account.activedirectory.windowsazure.com static2.sharepointonline.com ukc-word-edit.officeapps.live.com saaspoc1-my.sharepoint.com  
+  127.0.0.1 saaspoc1.sharepoint.com saaspoc1-my.sharepoint.com ukc-word-edit.officeapps.live.com ukc-excel.officeapps.live.com  ukc-powerpoint.officeapps.live.com 
   ```
   
   In case the machine running the project is not your local computer, replace **127.0.0.1** with the project host IP.
